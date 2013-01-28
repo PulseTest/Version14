@@ -242,6 +242,10 @@
 				</FileConfiguration>
 			</File>
 			<File
+				RelativePath=".\TestDialog.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\ViewTree.cpp"
 				>
 			</File>
@@ -297,6 +301,10 @@
 			</File>
 			<File
 				RelativePath=".\targetver.h"
+				>
+			</File>
+			<File
+				RelativePath=".\TestDialog.h"
 				>
 			</File>
 			<File

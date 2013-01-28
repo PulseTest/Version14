@@ -14,6 +14,7 @@
 
 #include "stdafx.h"
 #include "GitTest.h"
+#include "TestDialog.h"
 
 #include "MainFrm.h"
 
@@ -32,6 +33,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CMDIFrameWndEx)
 	ON_UPDATE_COMMAND_UI_RANGE(ID_VIEW_APPLOOK_WIN_2000, ID_VIEW_APPLOOK_OFF_2007_AQUA, &CMainFrame::OnUpdateApplicationLook)
 	ON_COMMAND(ID_VIEW_CAPTION_BAR, &CMainFrame::OnViewCaptionBar)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_CAPTION_BAR, &CMainFrame::OnUpdateViewCaptionBar)
+	ON_BN_CLICKED(ID_TOOLS_OPTIONS, &CMainFrame::OnOptions)
 END_MESSAGE_MAP()
 
 // CMainFrame construction/destruction
@@ -447,4 +449,10 @@ void CMainFrame::OnViewCaptionBar()
 void CMainFrame::OnUpdateViewCaptionBar(CCmdUI* pCmdUI)
 {
 	pCmdUI->SetCheck(m_wndCaptionBar.IsVisible());
+}
+
+void CMainFrame::OnOptions()
+{
+	CTestDialog aDialog;
+	aDialog.DoModal();
 }
