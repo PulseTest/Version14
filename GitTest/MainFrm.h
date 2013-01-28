@@ -67,6 +67,9 @@ protected:
 	BOOL CreateDockingWindows();
 	void SetDockingWindowIcons(BOOL bHiColorIcons);
 	BOOL CreateCaptionBar();
+
+public:
+	void SomeNewFunction();
 };
 
 

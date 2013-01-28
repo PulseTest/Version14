@@ -448,3 +448,9 @@ void CMainFrame::OnUpdateViewCaptionBar(CCmdUI* pCmdUI)
 {
 	pCmdUI->SetCheck(m_wndCaptionBar.IsVisible());
 }
+
+void CMainFrame::SomeNewFunction()
+{
+	BOOL bGarbage;
+	bGarbage = FALSE;
+}
